@@ -13,15 +13,14 @@ password = []
 
 for _ in range(nr_letters):
     password.append(random.choice(letters))
-    random.shuffle(password)
+
 
 for _ in range(nr_numbers):
     password.append(random.choice(numbers))
-    random.shuffle(password)
+
 
 for _ in range(nr_symbols):
     password.append(random.choice(symbols))
-    random.shuffle(password)
 
 random.shuffle(password)
 result = ''.join(password)
